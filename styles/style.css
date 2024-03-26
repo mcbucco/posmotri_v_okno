@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  padding: 278px 30px 0;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -38,7 +39,6 @@ ol {
 }
 
 .content {
-  margin: 276px 30px auto;
   display: flex;
   gap: 30px;
   align-items: end;
