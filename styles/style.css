@@ -84,7 +84,7 @@ ol {
 
 .search-form__label {
   cursor: pointer;
-  max-width: 225px;
+  width: fit-content;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -180,7 +180,7 @@ outline-offset: 2px;
 }
 
 .content__details {
-  width: 399px;
+  /* width: 399px; */
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -200,7 +200,6 @@ outline-offset: 2px;
 }
 
 .content__list {
-  /* width: 413px; /* компенсация занятой скролл-баром ширины */
   position: relative;
   height: 298px;
   overflow: hidden auto;
@@ -241,9 +240,9 @@ outline-offset: 2px;
 }
 
 .content__video-card {
+  height: 107px;
   display: flex;
   justify-content: space-between;
-  align-items: start;
 }
 
 .content__video-card-description-container {
@@ -259,19 +258,20 @@ outline-offset: 2px;
   line-height: 1;
   text-align: left;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 200px;
 }
 
 .content__video-card-description {
   line-height: 0.9;
-  /* font-family: Fira Sans Condensed;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: left; */
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
-  height: 103px;
+  object-fit: fill;
+  object-position: center;
+  flex: 0 1 193px;
 }
 
 .visually-hidden {
