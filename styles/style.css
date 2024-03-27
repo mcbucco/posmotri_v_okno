@@ -9,7 +9,9 @@ html {
 }
 
 .page {
-  padding: 278px 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -46,7 +48,6 @@ ol {
 
 .result {
   width: 711px;
-  padding-top: 78px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -66,8 +67,8 @@ ol {
 }
 
 .search-form {
-  display: flex;
-  justify-content: space-between;
+  display: flex; 
+  gap: 40px;
   align-items: end;
 }
 
@@ -78,10 +79,25 @@ ol {
 .search-form__fieldset-title {
   font-size: inherit;
   font-weight: 400;
-  line-height: 21.6px;
+  line-height: 1.2;
+}
+
+.search-form__label {
+  cursor: pointer;
+  max-width: 225px;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid rgba(255, 255, 255, 1);
+  outline-offset: 2px;
 }
 
 .search-form__textfield {
+  width: 225px;
   font-family: inherit;
   font-size: inherit;
   font-weight: 400;
@@ -89,7 +105,6 @@ ol {
   padding-top: 2.5px;
   padding-bottom: 2.5px;
   padding-left: 0;
-  width: 225px;
   cursor: pointer;
   appearance: none;
   background-color: inherit;
@@ -102,17 +117,8 @@ ol {
   outline: none;
 }
 
-.search-form__label:focus {
-  outline: none;
-}
+.search-form__textfield:active {
 
-.search-form__label:hover {
-  text-decoration: underline;
-}
-
-.search-form__label:has(:focus-visible) {
-  outline: 1px solid rgba(255, 255, 255, 1);
-  outline-offset: 2px;
 }
 
 .search-form__checkbox-list {
@@ -124,11 +130,10 @@ ol {
 
 .search-form__checkbox-list .search-form__label {
   display: flex;
-  gap: 1.5px;
+  gap: 5px;
 }
 
 .search-form__pseudo-checkbox {
-  cursor: pointer;
   display: inline-block;
   width: 19px;
   height: 19px;
@@ -182,12 +187,12 @@ outline-offset: 2px;
 }
 
 .title {
-font-family: Oswald;
-font-size: 75px;
-font-weight: 700;
-line-height: 70.5px;
-text-align: left;
-text-transform: uppercase;
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 0.94;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .content__accent {
@@ -248,16 +253,16 @@ text-transform: uppercase;
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1;
   text-align: left;
   text-transform: uppercase;
 }
 
 .content__video-card-description {
-  line-height: 16.2px;
+  line-height: 0.9;
   /* font-family: Fira Sans Condensed;
   font-size: 18px;
   font-weight: 400;
