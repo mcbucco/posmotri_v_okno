@@ -181,10 +181,10 @@ ol {
 }
 
 .content__details {
-  min-width: 399px;
   display: flex;
   flex-direction: column;
   gap: 26px;
+  min-width: 399px;
 }
 
 .title {
@@ -223,11 +223,13 @@ ol {
   text-decoration: none;
 }
 
-/* Замечание: 
-[Надо исправить Не хватает состояния :active по макету]
+/*
+Замечание: 
+Надо исправить Не хватает состояния :active по макету
 
 Из задания:
-[Первая карточка должна быть активной, а при переключении активная карточка должна выделяться. Это поведение уже написано на JavaScript. Но в CSS должны оказаться соответствующие стили для селектора .content__card-link_current.]*/
+Первая карточка должна быть активной, а при переключении активная карточка должна выделяться. Это поведение уже написано на JavaScript. Но в CSS должны оказаться соответствующие стили для селектора .content__card-link_current.
+*/
 
 .content__card-link:focus {
   outline: none;
@@ -275,9 +277,9 @@ ol {
 }
 
 .content__video-card-thumbnail {
+  flex: 0 0 194px;
   width: 194px;
   height: 103px;
-  flex: 0 0 194px;
   object-fit: cover;
   object-position: center;
 }
